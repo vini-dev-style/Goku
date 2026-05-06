@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+body{
+    background-color: #000;
+    
+}
+
+main::after{
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    min-width: 100vh;
+    width: 80%;
+    background: linear-gradient 92deg, #000 25%, rgb(0,0,0,0) 75%;
+    
+
+}
