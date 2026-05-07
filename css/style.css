@@ -56,3 +56,55 @@ main .personagem .imagem{
     line-height: 25px;
 }
 
+.botoes{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 190px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.botoes .botao{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+
+.botoes .botao img {
+    border-radius: 50%; 
+}
+
+.botoes .botao.selecionado{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #d9d9d9;
+}
+
+.botoes .botao.cyberstorm.selecionado{
+    box-shadow: 0 0 10px #47ffc5;
+}
+
+.botoes .botao.codepixie.selecionado{
+    box-shadow: 0 0 10px #9747ff;
+}
+
+.botoes .botao.hexblade.selecionado{
+    box-shadow: 0 0 10px #ffa947;
+}
+
+.botoes .botao.neonpulse.selecionado{
+    box-shadow: 0 0 10px #e4309a;
+}
+
+.botoes .botao.codebreak.selecionado{
+    box-shadow: 0 0 10px #fff047;
+}
