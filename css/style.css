@@ -3,7 +3,7 @@
 
 body{
     background-color: #000;
-    
+    overflow: hidden;
 }
 
 main::after{
@@ -12,8 +12,51 @@ main::after{
     top: 0;
     left: 0;
     min-width: 100vh;
-    width: 80%;
-    background: linear-gradient 92deg, #000 25%, rgb(0,0,0,0) 75%;
-    
-
+    width: 80vh;
+    background: linear-gradient(92deg, #000 25%, rgb(0,0,0,0) 75%) no-repeat;
 }
+
+main .personagens {
+    display: none;
+    height: 100vh;
+}
+
+main .personagem .selecionado {
+    display: block;
+}
+
+main .personagem .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo{
+    position: absolute;
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+}
+
+.conteudo .nome-personagem{
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.conteudo .descricao{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+
+
